@@ -20,10 +20,6 @@
       return $this->id;
     }
 
-    public function set_nome($novo_nome){
-      $this->nome = $novo_nome;
-    }
-
     public function get_nome(){
       return $this->nome;
     }
@@ -36,16 +32,8 @@
       return $this->data_nasc;
     }
 
-    public function set_rg($novo_rg){
-      $this->rg = $novo_rg;
-    }
-
     public function get_rg(){
       return $this->rg;
-    }
-
-    public function set_cpf($novo_cpf){
-      $this->cpf = $novo_cpf;
     }
 
     public function get_cpf(){
