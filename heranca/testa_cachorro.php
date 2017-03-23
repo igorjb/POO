@@ -2,10 +2,12 @@
   include_once 'class\Cachorro.php';
 
   $primeiro_animal = new Cachorro("Pitbull", "Ração", "Late", "Voraz",
-                                  "Encolhido", "corre");
+                                  "Encolhido", "Corre");
 
   $primeiro_animal->set_id(1);
+  $primeiro_animal->set_nivel_fome_animal("Moderada");
 
-  echo "ID: ".$primeiro_animal->get_id()."<br>";
-  echo "Tipo de Animal: ".$primeiro_animal->get_tipo_animal()."<br>";
-  echo "Tipo de Comida: ".$primeiro_animal->get_tipo_comida_animal()."<br>";
+  echo "<b>ID: </b>".$primeiro_animal->get_id()."<br>";
+  echo "<b>Tipo de Animal: </b>".$primeiro_animal->get_tipo_animal()."<br>";
+  echo "<b>Tipo de Comida: </b>".$primeiro_animal->get_tipo_comida_animal()."<br>";
+  echo "<b>Nível de Fome: </b>".$primeiro_animal->get_nivel_fome_animal()."<br>";
