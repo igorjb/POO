@@ -8,6 +8,7 @@
     private $largura_espaco_animal;
     private $coordenada_x_espaco_animal;
     private $coordenada_y_espaco_animal;
+    private $comportamento_animal_vagueando_ambiente;
 
     public function __construct($tipo_animal, $tipo_comida_animal){
       $this->tipo_animal = $tipo_animal;
@@ -68,5 +69,14 @@
 
     public function get_coordenada_y_espaco_animal(){
       return $this->coordenada_y_espaco_animal;
+    }
+
+    public function set_comportamento_animal_vagueando_ambiente($novo_comportamento_animal_vagueando_ambiente)
+    {
+      $this->comportamento_animal_vagueando_ambiente = $novo_comportamento_animal_vagueando_ambiente;
+    }
+
+    public function get_comportamento_animal_vagueando_ambiente(){
+      return $this->comportamento_animal_vagueando_ambiente;
     }
   }
