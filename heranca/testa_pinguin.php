@@ -10,4 +10,4 @@
   echo "<b>ID: </b>".$segundo_animal->get_id()."</br>";
   echo "<b>Tipo de Animal: </b>".$segundo_animal->get_tipo_animal()."</br>";
   echo "<b>Tipo de Comida: </b>".$segundo_animal->get_tipo_comida_animal()."</br>";
-  echo "<b>Nível de Fome: </b>".$segundo_animal->get_nivel_fome_animal()."<br/>";
+  echo "<b>Nivel de Fome: </b>".$segundo_animal->get_nivel_fome_animal()."<br/>";
