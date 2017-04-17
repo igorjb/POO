@@ -4,7 +4,7 @@
   $sexto_animal = new Passaro("Arara", "Alpiste", "Pia",
                                "Bica", "Sentado", "Voa");
 
-  $sexto_animal->set_id(5);
+  $sexto_animal->set_id(6);
   $sexto_animal->set_nivel_fome_animal("Baixa");
 
   echo "<b>ID: </b>".$sexto_animal->get_id()."</br>";
