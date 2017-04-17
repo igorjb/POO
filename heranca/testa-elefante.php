@@ -4,7 +4,7 @@
   $quinto_animal = new Elefante("Elefante Africano", "Mato", "Brame",
                                 "Abaixa a tromba", "Sentado", "Anda");
 
-  $quinto_animal->set_id(4);
+  $quinto_animal->set_id(5);
   $quinto_animal->set_nivel_fome_animal("Baixa");
 
   echo "<b>ID: </b>".$quinto_animal->get_id()."</br>";
