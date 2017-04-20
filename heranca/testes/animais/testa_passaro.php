@@ -1,5 +1,5 @@
 <?php
-  include_once '..\class\Passaro.php';
+  include_once "..\..\class\animais\Passaro.php";
 
   $sexto_animal = new Passaro("Arara", "Alpiste", "Pia",
                                "Bica", "Sentado", "Voa");

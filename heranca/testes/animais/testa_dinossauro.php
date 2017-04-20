@@ -1,5 +1,5 @@
 <?php
-  include_once '..\class\Dinossauro.php';
+  include_once "..\..\class\animais\Dinossauro.php";
 
   $setimo_animal = new Dinossauro("T-Rex", "Carne", "Ruge",
                                   "Morde", "Deita", "Anda");

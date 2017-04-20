@@ -1,5 +1,5 @@
 <?php
-  include_once '..\class\Cachorro.php';
+  include_once "..\..\class\animais\Cachorro.php";
 
   $primeiro_animal = new Cachorro("Pitbull", "Racao", "Late", "Voraz",
                                   "Encolhido", "Corre");

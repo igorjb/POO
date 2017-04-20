@@ -1,5 +1,5 @@
 <?php
-  include_once '..\class\Raposa.php';
+  include_once "..\..\class\animais\Raposa.php";
 
   $decimo_animal = new Raposa("Raposa Vermelha", "Carne", "Ruge",
                               "Morde", "Deita", "Corre");

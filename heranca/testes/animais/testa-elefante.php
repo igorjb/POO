@@ -1,5 +1,5 @@
 <?php
-  include_once '..\class\Elefante.php';
+  include_once "..\..\class\animais\Elefante.php";
 
   $quinto_animal = new Elefante("Elefante Africano", "Mato", "Brame",
                                 "Abaixa a tromba", "Sentado", "Anda");
