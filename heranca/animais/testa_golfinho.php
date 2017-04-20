@@ -1,5 +1,5 @@
 <?php
-  include_once 'class\Golfinho.php';
+  include_once '..\class\Golfinho.php';
 
   $nono_animal = new Golfinho("Golfinhos Bottlenose", "Peixe", "Balança",
                               "Engole", "Não dorme", "Nada");

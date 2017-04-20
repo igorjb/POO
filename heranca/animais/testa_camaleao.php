@@ -1,5 +1,5 @@
 <?php
-  include_once 'class\Camaleao.php';
+  include_once '..\class\Camaleao.php';
 
   $oitavo_animal = new Camaleao("Camaleao Listrado", "Frutas", "Não emite",
                                 "Engole", "Deita", "Corre");

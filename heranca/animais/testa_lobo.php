@@ -1,5 +1,5 @@
 <?php
-  include_once 'class\Lobo.php';
+  include_once '..\class\Lobo.php';
 
   $terceiro_animal = new Lobo("Lobo Cinzento", "Carne", "Uivo",
                               "Dobra a coluna", "Deitado", "Corre ou Anda");

@@ -1,5 +1,5 @@
 <?php
-  include_once 'class\Pinguin.php';
+  include_once '..\class\Pinguin.php';
 
   $segundo_animal = new Pinguin("Pinguin-africano", "Peixe", "Grito estridente",
                                 "Dobra a coluna", "Deitado", "Corre");

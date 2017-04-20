@@ -1,5 +1,5 @@
 <?php
-  include_once 'class\Touro.php';
+  include_once '..\class\Touro.php';
 
   $quarto_animal = new Touro("Touro Bravo", "Vegetais", "Muge",
                              "Desce a cabeça", "Deitado", "Anda");
