@@ -1,6 +1,6 @@
 <?php
 
-  include_once 'class/Aluno.php';
+  include_once '../class/Aluno.php';
 
   $primeiro_aluno = new Aluno("Igor", "123", date("Ymd"));
 
