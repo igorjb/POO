@@ -1,0 +1,30 @@
+0.3 – Incrementando a OO
+
+0.3.3 - Exercícios
+
+2ª) No exemplo acima, faria alguma diferença se o encapsulamento da variável
+estática fosse “private”?
+
+Faria. Porque evitariamos que outras classes possam ter acesso a variável.
+
+3ª) Quais seriam as vantagens ou desvantagens quanto a segurança dessa
+informação encapsulada?
+
+Vantagens:
+
+- A informação é disponibilizada ao usuário com toda a sua funcionalidade, sem a necessidade de 
+conhecermos seu funcionamento ou armazenamento interno;
+- É possível modificar a informação internamente, acrescentando métodos, sem que isto afete os outros 
+componentes do sistema que utilizam a informação modificada;
+- O processo de desenvolvimento de sistemas é acelerado e simplificado, já que os usuários que utilizam 
+dessa informação não precisam necessariamente saber como elas são constituídas internamente;
+- A implementação de um comportamento pode ser modificada radicalmente sem que haja impacto no 
+resto do programa. Isto é possível porque o código que utiliza a informação não depende da maneira que 
+ela é implementada.
+
+Desvantagens:
+
+- Aumento do gasto de memória (heap);
+- Se a variável que irá guardar essa informação for pública, qualquer classe pode ter acesso;
+- Se a variável que irá quardar essa informação for privada, ela não é acessível pelas subclasses;
+
