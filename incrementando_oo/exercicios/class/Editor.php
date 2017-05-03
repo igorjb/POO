@@ -4,15 +4,23 @@
 
   class Editor extends Usuarios{
 
-    private $a, $b;
+    private $usuarios;
 
-    public function __construct() {
-
-      $this->b = List_artigos::separa_artigos(1);
+    public function Editor(){
+      $usuarios = array();
     }
 
-    public function exibeCabecalho() {
-      $this->b;
+    public function addUsuario($novoUsuario) {
+      $this->usuarios[] = $novoUsuario;
+    }
+
+    public function mostraUsuarios(){
+      for($i=1; $i < count($this->usuarios); $i++){
+        $obj = $this->usuarios[$i];
+
+        echo List_artigos::separa_artigos($i);
+        echo "Onde vivo: {$obj->get_onde_vivo()}</br>";
+      }
     }
 
   }
