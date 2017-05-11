@@ -1,0 +1,23 @@
+1°) Qual a definição que podemos atribuir ao conceito de banco de dados.
+
+Banco de dados são estruturas que realizam a guarda e manipulação de dados
+para assegurar e organizar sistemas evitando que os dados sejam perdidos e
+gerando informações para o usuário.
+
+2°) Como podemos logar pelo Konsole no MYSQL.
+
+Digitando o seguinte comando: mysql -u root -p
+
+-u: define o nome do usuário
+-p: pedido de senha
+
+Obs: após digitar esse comando, se torna necessário informar a senha de acesso
+do usuário.
+
+3°) O que é estrutura de dados em MYSQL.
+
+Na estrutura de dados, os dados são armazenados e organizados. Portanto, no
+MYSQL a estrutura de dados é representada pelas tabelas do banco de dados. E em
+uma tabela cada dado é representando por um campo.
+
+Obs: cada campo de uma tabela contém um tipo de dado.
