@@ -21,3 +21,36 @@ MYSQL a estrutura de dados é representada pelas tabelas do banco de dados. E em
 uma tabela cada dado é representando por um campo.
 
 Obs: cada campo de uma tabela contém um tipo de dado.
+
+4°) Faça o seguinte exercício prático:
+
+  a) crie uma tabela com os campos nome e sobrenome.
+
+  CREATE TABLE dados(
+    id INT(11) NULL,
+    nome VARCHAR(40) NULL,
+    sobrenome VARCHAR(40) NULL
+  );
+
+  b) após criar visualize a tabela.
+
+  DESCRIBE dados;
+
+  c) insira alguns valores na tabela, no caso nomes e sobrenomes de pessoas
+  conhecidas.
+
+  INSERT INTO dados (id, nome, sobrenome) VALUES (1, "Daniel", "Barreira");
+
+  INSERT INTO dados (id, nome, sobrenome) VALUES (2, "Karla", "Sampaio");
+
+  INSERT INTO dados (id, nome, sobrenome) VALUES (3, "Iara", "Ramos");
+
+  d) crie um SELECT para visualizar todas as informações gravadas no banco.
+
+  SELECT * FROM dados;
+
+  e) agora atualize alguns dos campos com o comando UPDATE.
+
+  UPDATE dados SET sobrenome = "Aragão" WHERE id = 1;
+
+  UPDATE dados SET sobrenome = "Brito" WHERE id = 3;
