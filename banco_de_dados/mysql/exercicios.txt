@@ -1,4 +1,4 @@
-1°) Qual a definição que podemos atribuir ao conceito de banco de dados.
+﻿1°) Qual a definição que podemos atribuir ao conceito de banco de dados.
 
 Banco de dados são estruturas que realizam a guarda e manipulação de dados
 para assegurar e organizar sistemas evitando que os dados sejam perdidos e
@@ -54,3 +54,19 @@ Obs: cada campo de uma tabela contém um tipo de dado.
   UPDATE dados SET sobrenome = "Aragão" WHERE id = 1;
 
   UPDATE dados SET sobrenome = "Brito" WHERE id = 3;
+
+6°) Qual a finalidade da ferramenta PhpMyadmin.
+
+Tornar mais simples e prático o acesso as funcionalidades utilizadas no
+terminal do MYSQL.
+
+7°) Pesquise sobre banco de dados relacional e diga porque o MYSQL é
+considerado um banco de dados relacional.
+
+Porque o MYSQL guarda os dados em tabelas que se relacionam entre si.
+
+8°) Pesquise e defina o que é chave primária e chave estrangeira em banco de
+dados relacionais.
+
+Uma chave é considerada primária quando ela torna um registro em uma tabela
+único, e secundária quando uma coluna recebe relacionamento de outra tabela. 
