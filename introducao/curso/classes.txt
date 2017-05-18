@@ -1,0 +1,23 @@
+Pessoa
+
+ atributos: 
+   nome 
+   sobrenome
+ 
+ metodos: 
+   acordar 
+   comer 
+   dormir
+ 
+Carro 
+ 
+ atributos:
+  ano
+  modelo
+
+ metodos:
+  andar
+  estacionar no automatico
+  
+
+
