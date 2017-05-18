@@ -11,8 +11,8 @@
     public $data;
 
     //métodos
-    public function dizer_ola() {
-      echo "Olá, sou um usuário";
+    public function dizer_ola($outro_nome) {
+      echo "Olá $outro_nome, me chamo " . $this->nome;
     }
 
 
