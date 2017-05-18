@@ -12,7 +12,7 @@
 
     //métodos
     public function dizer_ola() {
-      echo "Olá, sou um usuário";
+      echo "Olá, me chamo " . $this->nome;
     }
 
 
