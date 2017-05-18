@@ -7,7 +7,7 @@
   $usuario1->nome = "Igor";
   $usuario2->nome = "Toin";
 
-  $usuario1->dizer_ola($usuario2->nome);
+  $usuario1->dizer_ola();
 
   echo "<br>";
 
