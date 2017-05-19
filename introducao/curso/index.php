@@ -1,11 +1,11 @@
 <?php
   include_once 'class/Usuario.php';
+  include_once 'class/Admin.php';
 
-  $usuario1 = new Usuario();
-  $usuario2 = new Usuario();
+  $admin = new Admin();
 
-  $usuario1->setNome("Igor");
+  $admin->setNome("Igor");
+  $admin->dizer_ola("Pedro");
 
-  echo $usuario1->getNome();
-  
+
 ?>
