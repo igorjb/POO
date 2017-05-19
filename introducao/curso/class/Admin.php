@@ -5,12 +5,19 @@
 
     private $cargo;
 
+    public function __construct($login, $senha, $cargo) {
+      parent::__construct($login, $senha);
+
+      $this->cargo = $cargo;
+    }
+
     public function setCargo($cargo) {
       $this->cargo = $cargo;
     }
 
     public function getCargo() {
-      return $cargo;
+      return $this->cargo;
     }
+
 
   }
