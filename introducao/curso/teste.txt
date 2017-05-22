@@ -1,0 +1,3 @@
+Um Médico tem um salário, nome, id, especialidade
+
+Enfermeiro tem um salário, nome, id, setor

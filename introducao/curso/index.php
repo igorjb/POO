@@ -1,17 +1,22 @@
 <?php
   include_once 'class/Usuario.php';
+  include_once 'class/Admin.php';
 
-  $usuario1 = new Usuario();
-  $usuario2 = new Usuario();
+  $usuario = new Usuario("Igor", 123);
 
-  $usuario1->nome = "Igor";
-  $usuario2->nome = "Toin";
+  echo "-----------Usuário---------------";
+  echo "<br/>";
+  echo "Login: " . $usuario->getLogin() . "<br/>";
+  echo "Senha: " . $usuario->getSenha() . "<br/>";
 
-  $usuario1->dizer_ola();
+  echo "<br/>";
+  
+  $admin = new Admin("Fabricio", 456, "Tutor");
 
-  echo "<br>";
-
-  //$usuario2->dizer_ola();
-
+  echo "------------Admin--------------";
+  echo "<br/>";
+  echo "Login: " . $admin->getLogin() . "<br/>";
+  echo "Senha: " . $admin->getSenha() . "<br/>";
+  echo "Cargo: " . $admin->getCargo();
 
 ?>
