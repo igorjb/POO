@@ -1,0 +1,19 @@
+1ª) Crie uma tabela Aluno com as colunas nome (VARCHAR(255)), email
+(VARCHAR(255)) telefone (VARCHAR(10)), altura (DECIMAL(3,2)) e aprovado
+(TINYINT(1)).
+
+CREATE TABLE alunos (
+  nome VARCHAR(255),
+  email VARCHAR(255),
+  telefone VARCHAR(10),
+  altura DECIMAL(3,2),
+  aprovado TINYINT(1)
+);
+
+2ª) Insira alguns registros na tabela evitando valores repetidos.
+
+3ª) Utilizando a cláusula WHERE refaça os exemplos criando uma consulta para
+cada tipo de operador.
+
+Observação: nas consultas utilize valores que façam sentido de acordo com os
+valores que você inseriu na tabela.
