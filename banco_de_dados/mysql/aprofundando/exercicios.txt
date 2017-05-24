@@ -12,6 +12,18 @@ CREATE TABLE alunos (
 
 2ª) Insira alguns registros na tabela evitando valores repetidos.
 
+INSERT INTO alunos (nome, email, telefone, altura, aprovado) VALUES
+                   ("Joao Henrique", "joao.henrique@fortaleza.ce.gov.br",
+                    "32267039", "1.70", "s");
+
+INSERT INTO alunos (nome, email, telefone, altura, aprovado) VALUES
+                    ("Joao Pedro", "joao.pedro@fortaleza.ce.gov.br", "32425039",
+                    "1.50", "s");
+
+INSERT INTO alunos (nome, email, telefone, altura, aprovado) VALUES
+                    ("Joao Paulo", "joao.paulo@fortaleza.ce.gov.br", "32467089",
+                    "1.40", "s");
+                    
 3ª) Utilizando a cláusula WHERE refaça os exemplos criando uma consulta para
 cada tipo de operador.
 
