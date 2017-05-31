@@ -1,0 +1,67 @@
+1ª) Crie uma tabela Aluno com as colunas nome (VARCHAR(255)), email
+(VARCHAR(255)) telefone (VARCHAR(10)), altura (DECIMAL(3,2)) e aprovado
+(TINYINT(1)).
+
+CREATE TABLE alunos (
+  nome VARCHAR(255),
+  email VARCHAR(255),
+  telefone VARCHAR(10),
+  altura DECIMAL(3,2),
+  aprovado TINYINT(1)
+);
+
+2ª) Insira alguns registros na tabela evitando valores repetidos.
+
+INSERT INTO alunos (nome, email, telefone, altura, aprovado) VALUES
+                   ("Joao Henrique", "joao.henrique@fortaleza.ce.gov.br",
+                    "32267039", "1.70", "s");
+
+INSERT INTO alunos (nome, email, telefone, altura, aprovado) VALUES
+                    ("Joao Pedro", "joao.pedro@fortaleza.ce.gov.br", "32425039",
+                    "1.50", "s");
+
+INSERT INTO alunos (nome, email, telefone, altura, aprovado) VALUES
+                    ("Joao Paulo", "joao.paulo@fortaleza.ce.gov.br", "32467089",
+                    "1.40", "s");
+                    
+3ª) Utilizando a cláusula WHERE refaça os exemplos criando uma consulta para
+cada tipo de operador.
+
+Observação: nas consultas utilize valores que façam sentido de acordo com os
+valores que você inseriu na tabela.
+
+SELECT * FROM alunos WHERE nome = "Igor Brilhante";
+
+SELECT * FROM alunos WHERE nome != "Igor Brilhante";
+
+SELECT * FROM alunos WHERE altura <= 1.70;
+
+SELECT * FROM alunos WHERE altura < 1.70;
+
+SELECT * FROM alunos WHERE altura >= 1.70;
+
+SELECT * FROM alunos WHERE altura > 1.70;
+
+SELECT * FROM alunos WHERE altura IS NULL;
+
+SELECT * FROM alunos WHERE altura IS NOT NULL;
+
+SELECT * FROM alunos WHERE altura BETWEEN 1.65 AND 1.70;
+
+SELECT * FROM alunos WHERE altura NOT BETWEEN 1.65 AND 1.70;
+
+SELECT * FROM alunos WHERE nome LIKE 'Igor%';
+
+SELECT * FROM alunos WHERE nome NOT LIKE 'Igor%';
+
+SELECT * FROM alunos WHERE altura IN (1.70, 1.50);
+
+SELECT * FROM alunos WHERE altura NOT IN (1.70, 1.50);
+
+SELECT * FROM alunos WHERE NOT altura='1.70';
+
+SELECT * FROM alunos WHERE altura = '1.50' AND email LIKE 'igor%';
+
+SELECT * FROM alunos WHERE altura = '1.50' OR email LIKE 'daniel%';
+
+SELECT * FROM alunos WHERE altura = '1.50' XOR email LIKE 'daniel%';
