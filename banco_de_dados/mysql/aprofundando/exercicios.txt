@@ -29,3 +29,39 @@ cada tipo de operador.
 
 Observação: nas consultas utilize valores que façam sentido de acordo com os
 valores que você inseriu na tabela.
+
+SELECT * FROM alunos WHERE nome = "Igor Brilhante";
+
+SELECT * FROM alunos WHERE nome != "Igor Brilhante";
+
+SELECT * FROM alunos WHERE altura <= 1.70;
+
+SELECT * FROM alunos WHERE altura < 1.70;
+
+SELECT * FROM alunos WHERE altura >= 1.70;
+
+SELECT * FROM alunos WHERE altura > 1.70;
+
+SELECT * FROM alunos WHERE altura IS NULL;
+
+SELECT * FROM alunos WHERE altura IS NOT NULL;
+
+SELECT * FROM alunos WHERE altura BETWEEN 1.65 AND 1.70;
+
+SELECT * FROM alunos WHERE altura NOT BETWEEN 1.65 AND 1.70;
+
+SELECT * FROM alunos WHERE nome LIKE 'Igor%';
+
+SELECT * FROM alunos WHERE nome NOT LIKE 'Igor%';
+
+SELECT * FROM alunos WHERE altura IN (1.70, 1.50);
+
+SELECT * FROM alunos WHERE altura NOT IN (1.70, 1.50);
+
+SELECT * FROM alunos WHERE NOT altura='1.70';
+
+SELECT * FROM alunos WHERE altura = '1.50' AND email LIKE 'igor%';
+
+SELECT * FROM alunos WHERE altura = '1.50' OR email LIKE 'daniel%';
+
+SELECT * FROM alunos WHERE altura = '1.50' XOR email LIKE 'daniel%';
