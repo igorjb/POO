@@ -35,5 +35,35 @@
 			// Close connection
 			unset($pdo);
 		}
+
+		public function select_aluno() {
+
+			//criando o objeto pdo...
+			$pdo = parent::getInstance();
+			$query = "SELECT * FROM alunos.dados";
+
+			//preparando consulta 
+			$statement = $pdo->prepare($query);
+
+			//executando consulta
+			$statement->execute();
+
+			//preparando resultado
+			$data = array();
+
+			if ($statement->rowCount())
+			{
+				while ($result = $statement->fetch(PDO::FETCH_ASSOC)) {
+
+					$data[] = utf8_decode($result['nome']) . " " . utf8_decode($result['sobrenome']);
+
+				}
+
+				return $data;
+			}
+
+			//caso não entre no if
+			return false;
+		}
 	} 
 ?>
