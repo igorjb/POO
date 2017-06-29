@@ -65,5 +65,40 @@
 			//caso não entre no if
 			return false;
 		}
+
+		public function select_aluno_by_nome($nome) {
+
+			//criando o objeto pdo...
+			$pdo = parent::getInstance();
+
+			$query = "SELECT * FROM alunos.dados"; 
+			$query .= " WHERE nome=:nome";
+
+			//preparando consulta
+			$statement = $pdo->prepare($query);
+
+			//filtrando valor, evita SQL Injection...
+			$nome = filter_var($nome);
+
+			//substituindo parametro pelo valor da busca
+			$statement->bindValue(":nome", $nome, PDO::PARAM_STR);
+
+			//executando consulta
+			$statement->execute();
+
+			//preparando resultado
+			$data = array();
+
+			if ($statement->rowCount()){
+				while ($result = $statement->fetch(PDO::FETCH_ASSOC)) {
+					$data[] = utf8_decode($result['nome']) . " " . utf8_decode($result['sobrenome']);
+				}
+
+				return $data;
+			}
+
+			//caso não entre no if
+			return false;
+		}
 	} 
 ?>
